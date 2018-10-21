@@ -1,0 +1,10 @@
+CREATE TABLE voip (
+ mac text NOT NULL UNIQUE,
+ ip text NOT NULL UNIQUE,
+ sip01 text,
+ usr01 text,
+ pwd01 text,
+ sip02 text,
+ usr02 text,
+ pwd02 text
+);
