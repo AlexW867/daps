@@ -1,0 +1,200 @@
+# xconfig 1.0  don't remove this line.
+# session [ patten position must be at first position
+# max 384 char pre line
+# for DPH150 only
+;
+[network ipv4]
+IPType                   0	;
+IPAddr                   %ipaddr	;
+IPSubMask                %netmask	;
+IPDefGW                  %gateway	;
+PPPoEUN                  	;
+PPPoEPW                  	;
+;
+[network ipv6]
+IPV6Mode                 0	;
+IPV6Addr                 	;
+IPV6Prefix               	;
+;
+[sipaccount]
+DefaultAccount           1	;
+ServerDialPrefix         **	;
+ACCActive01              1	;
+ACCSIPuser01             %usr01	;
+ACCAuthUN01              %usr01	;
+ACCAuthPW01              %pwd01	;
+ACCDisplay01             %usr01	;
+ACCRing01                	;
+ACCActive02              1	;
+ACCSIPuser02             %usr02	;
+ACCAuthUN02              %usr02	;
+ACCAuthPW02              %pwd02	;
+ACCDisplay02             %usr02	;
+ACCRing02                	;
+ACCActive03              0	;
+ACCSIPuser03             	;
+ACCAuthUN03              	;
+ACCAuthPW03              	;
+ACCDisplay03             	;
+ACCRing03                	;
+ACCActive04              0	;
+ACCSIPuser04             	;
+ACCAuthUN04              	;
+ACCAuthPW04              	;
+ACCDisplay04             	;
+ACCRing04                	;
+;
+[QoS]
+SIPTOS                   0	;
+VoiceTOS                 5	;
+SIPTrafficClass          0	;
+VoiceTrafficClass        5	;
+VLAN                     0	;
+VlanPri                  0	;
+VlanId                   0	;
+;
+[autoprov]
+HttpProSrv               %aps	;
+HttpProSrvPort           80	;
+TFtpProip                	;
+TFtpProPort              69	;
+FtpProip                 	;
+FtpProPort               21	;
+FreshTime                530	;
+ProUserName              	;
+ProPassword              	;
+ProProtocol              2	;
+;
+[network common]
+NetType                  0	;
+DnsServerIP1             %dns	;
+DnsServerIP2             	;
+;
+[normal]
+LoginAdmUN               admin	;
+LoginAdmPW               admin	;
+LoginUN                  user	;
+LoginPW                  user	;
+NTPServerIP              203.216.1.47	;
+TimeZone                 +8	;
+DayLight                 0	;
+Language                 7	;
+;
+[phone]
+ToneSetting              2	;
+RingerType               1	;
+HoldType                 0	;
+DND                      0	;
+Silent                   0	;
+CallWaiting              1	;
+CallWaitTone             1	;
+AnonyCall                0	;
+AnonymousCallReject      0	;
+AcceptAnyCall            1	;
+IntercomPaging           0	;
+AutoAnswer               	;
+CFNoAnsUse               0	;
+CFNoAnsURI               	;
+CFBusyUse                0	;
+CFBusyURI                	;
+CFUncondUse              0	;
+CFUncondURI              	;
+HotLineUse               0	;
+HotLineURI               	;
+HotLineTimeout           0	;
+PickupNumber             	;
+TransConfCall            0	;
+PoundKey                 1	;
+ShowMissedCall           1	;
+NTPRenewTime             1	;
+InterDigitTimer          3	;
+OutCancelTimer           180	;
+InRejectTimer            180	;
+HoldRecallTimer          180	;
+AutoSpkOff               30	;
+;
+[sip server]
+PhonePort                5060	;
+RegLocation              %sip01	;
+RegPort                  5060	;
+OBPLocation              	;
+OBPPort                  5060	;
+;
+[sip ipv6]
+v6RegLocation            	;
+v6RegPort                5060	;
+v6OBPLocation            	;
+v6OBPPort                5060	;
+ServerNetType01          0	;
+;
+[sip local]
+RegLocation01            %sip01	;
+RegPort01                5060	;
+OBPLocation01            	;
+OBPPort01                5060	;
+Crosslink01              0	;
+ServerNetType02          0	;
+RegLocation02            %sip02	;
+RegPort02                5060	;
+OBPLocation02            	;
+OBPPort02                5060	;
+Crosslink02              0	;
+ServerNetType03          0	;
+RegLocation03            	;
+RegPort03                5060	;
+OBPLocation03            	;
+OBPPort03                5060	;
+Crosslink03              0	;
+ServerNetType04          0	;
+RegLocation04            	;
+RegPort04                5060	;
+OBPLocation04            	;
+OBPPort04                5060	;
+Crosslink04              0	;
+;
+[sip common]
+RegExpTime               3600	;
+SendViaOB                0	;
+MsgServer                	;
+MsgPort                  5060	;
+MsgExpireTime            3600	;
+MsgAccount               	;
+SessTimer                1800	;
+Mediaport                41000	;
+Prack                    1	;
+SessRefresher            0	;
+SessMethod               0	;
+SIPTransport             0	;
+RegProxy                 1	;
+;
+[stun]
+UseStun                  0	;
+StunServer               	;
+UserDefipport            0	;
+ExtIPMethod              0	;
+Externalip               	;
+Externalsipport          	;
+Externalmediaport        	;
+UseUpnp                  0	;
+Natsendkeeppkt           1	;
+Natkeeplivetime          30	;
+;
+[voice]
+Codec1st                 0	;
+Codec2nd                 8	;
+Codec3rd                 18	;
+Codec4rd                 98	;
+Codec5rd                 9	;
+RTPPacketLengthG729A     20	;
+RTPPacketLengthG711u     20	;
+RTPPacketLengthG711A     20	;
+RTPPacketLengthG722      20	;
+RTPPacketLengthG726      20	;
+VAD                      0	;
+DTMF                     0	;
+2833Payload              101	;
+;
+[phonebook]
+PBName001                	;
+PBURI001                 	;
+PBRing001                0	;
